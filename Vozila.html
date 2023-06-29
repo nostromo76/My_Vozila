@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vozila.css" />
+    <title>Parking</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="unos">
+      <input type="text" id="vlasnik" placeholder="vlasnik">
+      <input type="text" id="auto" placeholder="auto">
+      <input type="text" id="tablice" placeholder="AA-1234-BB ili XX-123-YY">
+      <input type="number" id="godiste" placeholder="godiste" min="1990" max="2023" step="1">
+      <input type="number" id="kilometraza" placeholder="okvirno presao km" style ="width:130px" min="500" max="100000" step="1000">
+      <input type="date" id="DatumUlaska" placeholder="Unesite datum ulaska">
+      <input type="date" id="DatumIzlaska" placeholder="Unesite datum izlaska">
+      <button id="submit">Potvrdi</button>
+      <div id="greska" style="color:red;"></div>
+    </div>
+
+    <div>
+      <h5>Lista Vozila na parkingu</h5>
+      <table id="parkingTable">
+        <thead id="tableHead">
+          <tr>
+            <th scope="col">Vlasnik</th>
+            <th scope="col">Auto</th>
+            <th scope="col">tablice</th>
+            <th scope="col">Datum ulaska</th>
+            <th scope="col">Datum izlaska</th>
+            <th scope="col">Kategorija</th>
+            <th scope="col" class="actions">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="rezultat">
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="katgorija"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Kategorije</h3>
+    <div class="card">
+      <div class="container">
+        <h4>Parking za osobe  sa invaliditetom</h4>
+        <p>Postovane kolege, ovaj parking je namenjen za osobe sa invalidetom.Hvala sto postujete dogovor</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="container">
+        <h4>Pravila i obaveze</h4>
+        <p>pravila i obaveze su u skladu sa zakonom o saobracajnim propisima i dogovorom zaposlenih
+            shodno dobrim poslovnim obicajima i etickim normama.
+        </p>
+      </div>
+    </div>
+  </div>
+    <script src="Vozila.js"></script>
+</body>
+</html>

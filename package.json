@@ -1,0 +1,15 @@
+{
+  "name": "my_vozila",
+  "version": "1.0.0",
+  "description": "simple html css Js parking lot tested with cypress framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.16.0",
+    "mochawesome": "^7.1.3"
+  }
+}
