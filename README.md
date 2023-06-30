@@ -29,7 +29,8 @@ npm install
 3. Open Cypress by running the following command:
 
 ```
-npm run cypress:open
+npm run cypress:open or 
+npx cypress run                      (if you need reporter)
 ```
 
 4. This will launch the Cypress Test Runner, where you can select the test(s) you want to run.
